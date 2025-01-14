@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .class-one{
+            border: 2px dashed blue;
+            margin-top: 10px;
+        }
+
+        .class-two{
+            margin-top: 10px;
+            border: 2px solid green;
+        }
+
+        #welcome-span{
+            color: blue;
+        }
+
+        #simple-span{
+            color: green;
+            font-size: 30px;
+        }
+
+        /*  Syntax of child selector
+            parent-element > child-element */
+        div > p {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p>this isn't a child to any div element</p>
+    <div class="class-one">
+        <a href="intro.html">Intro Page</a>
+        <h1>
+            <span id="welcome-span">Welcome</span> to Page Three
+        </h1>
+        <p>
+            this is a <span id="simple-span">simple paragraph</span> in page Three. Hope you enjoy it
+        </p>
+        <h2>This is h2</h2>
+    </div>
+
+    <div class="class-two">
+        <p>paragraph one in second div</p>
+        <h1>h one in second div</h1>
+    </div>
+
+    <div class="class-one">
+        <h3>this is h3 in the third div</h3>
+        <p>i dont know what to put in here, but i want something</p>
+    </div>
+</body>
+</html>

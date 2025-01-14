@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Layout</title>
+    <style>
+        #display-width{
+            width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .row-one-col {
+            width: 220px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        /* css for phones */
+        @media screen and (max-width: 500px) {
+            #display-width{
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .row-one-col {
+                width: 100%;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+
+        /* css for tablets */
+        @media screen and (min-width: 510px) and (max-width: 1024px) {
+            #display-width{
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .row-one-col {
+                width: 45%;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="display-width">
+        <div class="row">
+            <div class="row-one-col">
+                <img src="Orooluwa.png" alt="" width="100%" height="150px">
+                <h3>Orooluwa image used here</h3>
+                <p>
+                    this is just a temporary paragraph to demonstrate
+                    that each div represents a col
+                </p>
+            </div>
+            <div class="row-one-col">
+                <img src="logo-no-text.png" alt="" width="100%" height="150px">
+                <h3>Genius Computer Tech logo used here</h3>
+                <p>
+                    this is just a temporary paragraph to demonstrate
+                    that each div represents a col
+                </p>
+            </div>
+            <div class="row-one-col">
+                <img src="qudus.png" alt="" width="100%" height="150px">
+                <h3>Qudus image used here</h3>
+                <p>
+                    this is just a temporary paragraph to demonstrate
+                    that each div represents a col
+                </p>
+            </div>
+            <div class="row-one-col">
+                <img src="israel.png" alt="" width="100%" height="150px">
+                <h3>Hair transplant. Treatments that actually</h3>
+                <p>
+                    this is just a temporary paragraph to demonstrate
+                    that each div represents a col
+                </p>
+            </div>
+        </div>
+
+        <div class="row"></div>
+    </div>
+</body>
+</html>

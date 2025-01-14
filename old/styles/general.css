@@ -1,0 +1,26 @@
+h1{
+    color: #496e1f;
+    text-align: center;
+}
+
+p{
+    color: grey;
+    font-family: 'Courier New';
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+h3 {
+    color: blue;
+}
+
+h4{
+    color: yellow;
+    background-color: black;
+}
+
+p::first-letter {
+    color: blue;
+    font-size: 30px;
+}

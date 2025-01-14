@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        input:invalid {
+            border: 1px solid red;
+        }
+
+        input:valid {
+            border: 1px solid green;
+        }
+
+        .textbox{
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <!-- form controls -->
+         <!-- property/value
+            name/value -->
+        <label>First Name</label>
+        <input class="textbox" type="text" name="firstname" placeholder="First Name" maxlength="10" required>
+        <br>
+        <label for="">Last Name</label>
+        <input class="textbox" type="text" name="lastname" placeholder="Last Name" required>
+        <br>
+        <label for="">Phone Number</label>
+        <input class="textbox" type="number" name="phone" required maxlength="11">
+        <br>
+        <label for="">Password</label>
+        <input class="textbox" type="password">
+        <br>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="sex" value="M">Male
+        <input type="radio" name="sex" value="F" checked>Female
+        <input type="radio" name="sex" value="O">Others
+
+        <br>
+        <label for="">Family</label>
+        <input type="radio" name="Family" value="nuclear" checked>Nuclear
+        <input type="radio" name="Family" value="extended">Extended
+
+        <br>
+        <label for="">Favorite Food</label>
+        <input type="checkbox" name="food" value="rice">rice
+        <input type="checkbox" name="food" checked value="beans">Beans
+        <input type="checkbox" name="food" value="yam">Yam
+
+        <br>
+        <label for="">Colors</label>
+        <input type="checkbox" name="color" value="green">green
+        <input type="checkbox" name="color" value="blue">Blue
+        <input type="checkbox" name="color" value="purple">Purple
+        <input type="checkbox" name="color" value="pink">Pink
+
+        <br>
+        <textarea name="about" rows="5" cols="30" placeholder="say someething about yourself">
+        </textarea>
+
+        <br>
+        <label for="">Language</label>
+        <select name="language" id="">
+            <option value="eng">English</option>
+            <option value="fr">French</option>
+            <option value="yoruba" selected>Yoruba</option>
+        </select>
+
+        <br>
+        <label for="">please upload</label>
+        <input type="file" accept="image/jpeg">
+        <br>
+        <input type="submit" value="Create Account">
+    </form>
+</body>
+</html>
