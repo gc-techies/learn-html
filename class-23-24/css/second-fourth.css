@@ -1,0 +1,27 @@
+p {
+    color: rgb(219, 4, 4);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, 'sans-serif';
+    line-height: 25px;
+    text-align: right;
+    /* background-color: black; */
+    background-image: url('../tobi.png');
+    background-repeat: repeat-y;
+}
+
+p::first-line {
+    color: black;
+}
+
+p::first-letter {
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+    color: green;
+}
+
+li {
+    color: rgb(29, 235, 11);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+    font-style: italic;
+    background-color: yellow;
+}
