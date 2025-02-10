@@ -15,23 +15,10 @@
         .row {
             display: flex;
             margin-top: 10px;
+            flex-wrap: wrap;
         }
 
-        #rowOneColOne {
-            width: 300px;
-            margin-left: 10px;
-            margin-right: 10px;
-            background-color: blue;
-        }
-
-        #rowOneColTwo {
-            width: 300px;
-            margin-left: 10px;
-            margin-right: 10px;
-            background-color: blue;
-        }
-
-        #rowOneColThree {
+        .rowOneCols {
             width: 300px;
             margin-left: 10px;
             margin-right: 10px;
@@ -79,19 +66,43 @@
             margin-right: 10px;
             background-color: white;
         }
+
+        /* css for phones */
+        @media screen and (max-width: 500px) {
+            #container{
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .row {
+                width: 100%;
+            }
+
+            .rowOneCols {
+                width: 100%;
+                margin-left: 10px;
+                margin-right: 10px;
+                background-color: blue;
+                margin-top: 5px;
+            }
+        }
     </style>
 </head>
 <body>
     <div id="container">
         <div class="row">
-            <div id="rowOneColOne">
+            <div class="rowOneCols">
                 <h1>row one col one</h1>
                 <p>
                     Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, 
                 </p>
             </div>
-            <div id="rowOneColTwo">row one col two</div>
-            <div id="rowOneColThree">row one col three</div>
+            <div class="rowOneCols">
+                <h1>row one col two</h1>
+                <p>row one col two item</p>
+            </div>
+            <div class="rowOneCols">row one col three</div>
         </div>
 
         <div class="row">
