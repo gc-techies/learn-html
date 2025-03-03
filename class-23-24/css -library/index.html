@@ -6,45 +6,51 @@
     <title>Document</title>
     <link rel="stylesheet" href="./bootstrap/bootstrap.css">
     <script src="./bootstrap/bootstrap.bundle.js"></script>
-    <style>
-        #intro {
-            /* background-color: yellow; */
-        }
-        #one {
-            background-color: blue;
-        }
-        #two {
-            background-color: orange;
-        }
-        #three {
-            background-color: pink;
-        }
-
-        span {
-            color: red;
-        }
-    </style>
 </head>
 <body>
     <div id="intro" class="container-fluid">
         <div class="row">
-            <div id="one" class="col-sm-12 col-md-3">
+            <div id="one" class="col-sm-12 col-md-3 bg-primary text-white">
               1 of 3 this is a dummy text to know the length
             </div>
-            <div id="two" class="col-md-6 col-sm-12">
+            <div id="two" class="col-md-6 col-sm-12 bg-danger text-white">
               2 of 3 (wider) and also bigger and also stronger and still going
             </div>
-            <div id="three" class="col-sm-12 col-md-3">
+            <div id="three" class="col-sm-12 col-md-3 bg-success text-white">
               3 of 3
             </div>
         </div>
 
         <div class="row mt-1 gy-2">
             <div class="col-sm-12 col-md-4">
-                <div class="p-2" id="one">1 of 3 this is a dummy text to know the length</div>
+                <div class="p-2 bg-warning" id="one">
+                    1 of 3 this is a dummy text to know the length
+                    <button type="button" class="btn btn-success">
+                        Notifications <span class="badge text-bg-warning rounded-pill">4</span>
+                    </button>
+                    <br>
+                    <button type="button" class="btn btn-outline-info mt-2">Info</button>
+                </div>
             </div>
             <div class="col-md-4 col-sm-12">
-                <div class="p-2" id="two">2 of 3 (wider) and also bigger and also stronger and still going</div>
+                <div class="p-2 bg-secondary text-white" id="two">
+                    2 of 3 (wider) and also bigger and also stronger and still going
+                    <button type="button" class="btn btn-primary position-relative">
+                        Inbox
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                          99+
+                          <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </button>
+                    <div class="card">
+                        <img src="../resources/logo-no-text.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-sm-12 col-md-4">
                 <div class="p-2" id="three">
@@ -57,7 +63,7 @@
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <span>This is the first item's accordion body.</span>
+                                    <span class="text-danger">This is the first item's accordion body.</span>
                                 </div>
                             </div>
                         </div>
