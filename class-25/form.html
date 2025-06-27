@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        input, select {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Learning Forms</h1>
+    <form>
+        <label for="">First Name</label>
+        <input type="text" name="firstName" placeholder="first name" size="50px" maxlength="10"> <br>
+        <input type="text" name="lastName" placeholder="Last Name"> <br>
+        <input type="number" placeholder="age" name="age"> <br>
+        <input type="text" placeholder="username" name="username"> <br>
+        <input type="password" placeholder="password" name="password"> <br>
+        <label for="">Gender:</label>
+        <input type="radio" name="sex" value="M">Male
+        <input type="radio" name="sex" value="F">Female
+        <input type="radio" name="sex" value="O" checked>Other
+        <br>
+        <input type="checkbox" name="food" value="rice">Rice
+        <input type="checkbox" name="food" value="beans" checked>Beans
+        <input type="checkbox" name="food" value="yam">Yam
+        <br>
+        <select name="genre">
+            <option value="pop">POP</option>
+            <option value="Hip Hop">Hip HOP</option>
+            <option value="R&B" selected>R&B</option>
+        </select>
+        <br>
+        <input type="file" name="cv" id="" accept="image/jpeg">
+        <br>
+        <input type="button" value="submit">
+    </form>
+</body>
+</html>
