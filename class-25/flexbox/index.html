@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .grid-container {
+            width: 960px;
+            /* height: 500px; */
+            /* background-color: blue; */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .row {
+            display: flex;
+            background-color: red;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .rowOneColOne {
+            width: 300px;
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: blue;
+            margin-bottom: 10px;
+        }
+
+        .rowTwoColOne {
+            width: 620px;
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: brown;
+        }
+
+        .rowTwoColTwo {
+            width: 300px;
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: brown;
+        }
+
+        @media screen and (max-width: 450px) {
+            .grid-container {
+                width: 100%;
+            }
+
+            .rowOneColOne {
+                width: 100%;
+            }
+        }
+
+        @media screen and (min-width: 500px) and (max-width: 1024px) and (orientation: landscape) {
+
+            .rowTwoColOne {
+                width: 100%;
+                margin-left: 10px;
+                margin-right: 10px;
+                background-color: brown;
+            }
+
+            .rowTwoColTwo {
+                display: none;
+            }
+        }
+
+        @media print {
+            .grid-container {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="row">
+            <div class="rowOneColOne">
+                row one col one
+                <p>testing a paragraph</p>
+                <h2>testing h2</h2>
+            </div>
+            <div class="rowOneColOne">
+                row one col two
+                <h1>bootstrap</h1>
+                <h1>tailwind</h1>
+            </div>
+            <div class="rowOneColOne">
+                <img src="../tobi.png" width="100%" alt="" srcset="">
+                <p>row one col three</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="rowTwoColOne">
+                <h1>row two col one</h1>
+            </div>
+            <div class="rowTwoColTwo">
+                <h2>row two col two</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="rowTwoColTwo">
+                <h2>row two col two</h2>
+            </div>
+            <div class="rowTwoColOne">
+                <h1>row two col one</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
